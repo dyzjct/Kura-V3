@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "m7thh4ck",
+	"version": "1.0.0",
+	"name": "M7thH4ck",
+	"description": "A hack for Minecraft Anarchy server.",
+	"authors": [
+		"dyzjct",
+		"mingtian1337",
+		"0d4"
+	],
+	"contact": {
+	},
+	"icon": "assets/m7thh4ck/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+          "dev.m7thh4ck.net.M7thH4ck::INSTANCE"
+		]
+	},
+	"mixins": [
+		"m7thh4ck.mixins.json"
+	],
+	"accessWidener": "m7thh4ck.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"fabric": "*",
+		"minecraft": "1.20.1"
+	}
+}
