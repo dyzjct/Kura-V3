@@ -1,6 +1,6 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.event.impl.MouseClickEvent;
+import dev.kura.net.event.impl.MouseClickEvent;
 import net.minecraft.client.Mouse;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

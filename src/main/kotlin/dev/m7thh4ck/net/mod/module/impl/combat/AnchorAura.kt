@@ -1,32 +1,24 @@
 package dev.m7thh4ck.net.mod.module.impl.combat
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.TickEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.TickEvent
 import dev.m7thh4ck.net.managers.impl.RotationManager
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module
-import dev.m7thh4ck.net.util.entity.EntityUtil
 import dev.m7thh4ck.net.util.math.TimerUtils
-import dev.m7thh4ck.net.util.math.vector.VectorUtils.toBlockPos
 import dev.m7thh4ck.net.util.other.SurroundUtils.isHole
 import dev.m7thh4ck.net.util.player.InventoryUtil
-import dev.m7thh4ck.net.util.player.InventoryUtil.spoofHotbar
 import dev.m7thh4ck.net.util.player.PlayerUtil.sendSequencedPacket
 import dev.m7thh4ck.net.util.player.getTarget
 import dev.m7thh4ck.net.util.world.BlockUtil.fastPos
-import dev.m7thh4ck.net.util.world.PlaceInfo
 import net.minecraft.block.Blocks
-import net.minecraft.block.RespawnAnchorBlock
-import net.minecraft.entity.ItemEntity
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Items
-import net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket
 import net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket
 import net.minecraft.util.Hand
 import net.minecraft.util.hit.BlockHitResult
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.math.Direction
-import net.minecraft.util.math.Vec3d
 
 
 object AnchorAura : Module("AnchorAura", Category.Combat, true) {

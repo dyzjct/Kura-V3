@@ -5,7 +5,7 @@ import net.minecraft.text.Text
 import net.minecraft.util.Formatting
 
 
-object ChatUtil : dev.m7thh4ck.net.util.Util() {
+object ChatUtil : Util() {
     const val DeleteID = 94423
     var SECTIONSIGN = "\u00A7"
     var BLACK = SECTIONSIGN + "0"

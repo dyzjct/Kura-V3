@@ -1,8 +1,8 @@
 package dev.m7thh4ck.net.mod.module.impl.render
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.GameLoopEvent
-import dev.m7thh4ck.net.event.impl.Render3DEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.GameLoopEvent
+import dev.kura.net.event.impl.Render3DEvent
 import dev.m7thh4ck.net.util.entity.EntityUtil.aroundBlock
 import dev.m7thh4ck.net.util.graphics.Render3DEngine
 import dev.m7thh4ck.net.util.world.BlockUtil.blockType

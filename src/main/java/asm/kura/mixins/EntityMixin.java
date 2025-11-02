@@ -1,6 +1,6 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.event.impl.PlayerMoveEvent;
+import dev.kura.net.event.impl.PlayerMoveEvent;
 import dev.m7thh4ck.net.mod.module.impl.movement.Velocity;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.Entity;

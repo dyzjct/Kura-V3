@@ -1,14 +1,10 @@
 package dev.m7thh4ck.net.mod.module.impl.player
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.TickEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.TickEvent
 import dev.m7thh4ck.net.managers.impl.RotationManager
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module
-import dev.m7thh4ck.net.mod.module.impl.combat.HolePush
-import dev.m7thh4ck.net.mod.module.impl.combat.HolePush.setting
-import dev.m7thh4ck.net.mod.module.impl.combat.SelfFill
-import dev.m7thh4ck.net.mod.module.impl.combat.SelfFill.setting
 import dev.m7thh4ck.net.util.interfaces.DisplayEnum
 import dev.m7thh4ck.net.util.math.TimerUtils
 import dev.m7thh4ck.net.util.player.InventoryUtil

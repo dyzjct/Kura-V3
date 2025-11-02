@@ -1,8 +1,8 @@
 package dev.m7thh4ck.net.managers.impl
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.CrystalSetDeadEvent
-import dev.m7thh4ck.net.event.impl.PacketEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.CrystalSetDeadEvent
+import dev.kura.net.event.impl.PacketEvent
 import dev.m7thh4ck.net.util.Wrapper.world
 import dev.m7thh4ck.net.util.math.vector.distanceSqTo
 import net.minecraft.client.MinecraftClient

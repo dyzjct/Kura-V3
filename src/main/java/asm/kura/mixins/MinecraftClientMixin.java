@@ -1,8 +1,8 @@
 package asm.kura.mixins;
 
 import dev.kura.net.KURA;
-import dev.m7thh4ck.net.event.impl.GameLoopEvent;
-import dev.m7thh4ck.net.event.impl.TickEvent;
+import dev.kura.net.event.impl.GameLoopEvent;
+import dev.kura.net.event.impl.TickEvent;
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

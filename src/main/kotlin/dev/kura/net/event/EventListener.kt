@@ -1,4 +1,6 @@
-package dev.m7thh4ck.net.event
+package dev.kura.net.event
+
+import dev.kura.net.event.EventBus
 
 @JvmOverloads
 @JvmSynthetic

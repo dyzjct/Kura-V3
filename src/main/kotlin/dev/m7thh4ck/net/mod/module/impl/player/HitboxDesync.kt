@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.mod.module.impl.player
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.TickEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.TickEvent
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module
 import dev.m7thh4ck.net.util.helper.ChatUtil

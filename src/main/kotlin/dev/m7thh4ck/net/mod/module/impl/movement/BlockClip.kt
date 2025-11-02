@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.mod.module.impl.movement
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.PlayerMoveEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.PlayerMoveEvent
 import dev.m7thh4ck.net.util.extension.floorToInt
 import dev.m7thh4ck.net.util.world.BlockUtil.blockType
 import dev.kura.net.asmimpl.IVec3d

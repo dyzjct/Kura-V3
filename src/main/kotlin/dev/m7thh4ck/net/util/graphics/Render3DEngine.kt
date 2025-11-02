@@ -2,8 +2,8 @@ package dev.m7thh4ck.net.util.graphics
 
 import com.mojang.blaze3d.systems.RenderSystem
 import com.mojang.blaze3d.systems.RenderSystem.disableBlend
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.Render3DEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.Render3DEvent
 import dev.m7thh4ck.net.util.Util
 import net.minecraft.client.render.*
 import net.minecraft.client.util.math.MatrixStack

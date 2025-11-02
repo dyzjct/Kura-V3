@@ -1,13 +1,9 @@
 package dev.m7thh4ck.net.mod.module.impl.combat
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.StopUsingItemEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.StopUsingItemEvent
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module
-import dev.m7thh4ck.net.mod.module.impl.movement.AntiWeb
-import dev.m7thh4ck.net.mod.module.impl.movement.AntiWeb.setting
-import dev.m7thh4ck.net.mod.module.impl.player.PacketMine.setting
-import dev.m7thh4ck.net.util.world.BlockUtil
 import net.minecraft.entity.Entity
 import net.minecraft.item.Items
 import net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket

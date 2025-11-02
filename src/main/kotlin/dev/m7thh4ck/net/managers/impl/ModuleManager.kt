@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.managers.impl
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.KeyBoardEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.KeyBoardEvent
 import dev.m7thh4ck.net.mod.module.Module
 import dev.m7thh4ck.net.mod.module.impl.client.ClickGUI
 import dev.m7thh4ck.net.mod.module.impl.client.Debug
@@ -12,6 +12,7 @@ import dev.m7thh4ck.net.mod.module.impl.misc.*
 import dev.m7thh4ck.net.mod.module.impl.movement.*
 import dev.m7thh4ck.net.mod.module.impl.player.*
 import dev.m7thh4ck.net.mod.module.impl.render.*
+import dev.m7thh4ck.net.util.Wrapper
 
 
 object ModuleManager {
@@ -22,7 +23,7 @@ object ModuleManager {
     init {
 
         eventListener<KeyBoardEvent>(Int.MAX_VALUE, true) {
-            if (dev.m7thh4ck.net.util.Wrapper.mc.currentScreen != null) return@eventListener
+            if (Wrapper.mc.currentScreen != null) return@eventListener
 
             for (mod in modules) {
                 if (mod.keybind.key == it.key) {

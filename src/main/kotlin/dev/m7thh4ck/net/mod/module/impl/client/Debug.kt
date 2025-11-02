@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.mod.module.impl.client
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.Render2DEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.Render2DEvent
 import dev.m7thh4ck.net.util.graphics.TextUtil
 import dev.m7thh4ck.net.util.graphics.color.ColorRGB
 import dev.m7thh4ck.net.mod.module.Category

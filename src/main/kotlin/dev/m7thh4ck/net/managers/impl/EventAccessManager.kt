@@ -1,6 +1,6 @@
 package dev.m7thh4ck.net.managers.impl
 
-import dev.m7thh4ck.net.event.impl.PlayerMotionEvent
+import dev.kura.net.event.impl.PlayerMotionEvent
 object EventAccessManager {
     private var playerMotion: PlayerMotionEvent? = null
 

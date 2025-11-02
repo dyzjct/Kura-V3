@@ -1,6 +1,6 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.event.impl.WorldEvent;
+import dev.kura.net.event.impl.WorldEvent;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.server.world.ChunkLevelType;

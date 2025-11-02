@@ -1,14 +1,11 @@
 package dev.m7thh4ck.net.mod.module.impl.movement
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.PlayerUpdateEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.PlayerUpdateEvent
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module
-import dev.m7thh4ck.net.mod.module.impl.combat.AutoWeb.setting
-import dev.m7thh4ck.net.mod.module.impl.movement.Step.setting
 import dev.m7thh4ck.net.util.world.BlockUtil.forward
 import net.minecraft.block.Blocks
-import net.minecraft.block.CobwebBlock
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.math.Box
 

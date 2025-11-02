@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.util.combat
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.PlayerMoveEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.PlayerMoveEvent
 import dev.m7thh4ck.net.util.Util
 import dev.m7thh4ck.net.util.extension.sq
 import dev.kura.net.asmimpl.IExplosion

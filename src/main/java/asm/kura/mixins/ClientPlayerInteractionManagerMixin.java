@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.event.impl.BlockEvent;
-import dev.m7thh4ck.net.event.impl.StopUsingItemEvent;
+import dev.kura.net.event.impl.BlockEvent;
+import dev.kura.net.event.impl.StopUsingItemEvent;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.entity.player.PlayerEntity;

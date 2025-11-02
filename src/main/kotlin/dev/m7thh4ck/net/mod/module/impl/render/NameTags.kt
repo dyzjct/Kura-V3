@@ -1,8 +1,8 @@
 package dev.m7thh4ck.net.mod.module.impl.render
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.Render2DEvent
-import dev.m7thh4ck.net.event.impl.RenderLivingLabelEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.Render2DEvent
+import dev.kura.net.event.impl.RenderLivingLabelEvent
 import dev.m7thh4ck.net.managers.impl.FriendManager
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module

@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.mod.module.impl.combat
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.PlayerMotionEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.PlayerMotionEvent
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module
 import dev.m7thh4ck.net.mod.module.impl.combat.HolePush.doHolePush
@@ -12,7 +12,6 @@ import dev.m7thh4ck.net.util.world.BlockUtil.canBreak
 import dev.m7thh4ck.net.util.world.BlockUtil.getMiningSide
 import net.minecraft.block.Blocks
 import net.minecraft.block.RedstoneBlock
-import net.minecraft.entity.MovementType
 import net.minecraft.util.math.BlockPos
 
 object CityMiner : Module(name = "CityMiner", category = Category.Combat) {

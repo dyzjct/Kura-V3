@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import dev.m7thh4ck.net.event.impl.Render3DEvent;
+import dev.kura.net.event.impl.Render3DEvent;
 import dev.m7thh4ck.net.mod.module.impl.render.AspectRatio;
 import dev.m7thh4ck.net.mod.module.impl.render.CustomFov;
 import dev.m7thh4ck.net.mod.module.impl.render.NoRender;

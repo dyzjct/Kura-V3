@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.mod.module.impl.combat
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.TickEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.TickEvent
 import dev.m7thh4ck.net.managers.impl.RotationManager
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module
@@ -11,7 +11,6 @@ import dev.m7thh4ck.net.util.math.TimerUtils
 import dev.m7thh4ck.net.util.player.getTarget
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.SwordItem
-import net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket
 
 object KillAura : Module(
     name = "KillAura",

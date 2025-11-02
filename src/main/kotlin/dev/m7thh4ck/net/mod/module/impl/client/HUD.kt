@@ -2,8 +2,8 @@ package dev.m7thh4ck.net.mod.module.impl.client
 
 import com.mojang.blaze3d.platform.GlStateManager
 import dev.kura.net.KURA
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.Render2DEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.Render2DEvent
 import dev.m7thh4ck.net.managers.impl.ModuleManager
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module

@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.mod.module.impl.movement
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.PlayerMoveEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.PlayerMoveEvent
 import dev.m7thh4ck.net.managers.impl.MovementManager
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module

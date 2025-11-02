@@ -2,7 +2,7 @@ package asm.kura.mixins;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import dev.kura.net.KURA;
-import dev.m7thh4ck.net.event.impl.Render2DEvent;
+import dev.kura.net.event.impl.Render2DEvent;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.hud.InGameHud;

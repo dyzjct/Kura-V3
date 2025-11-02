@@ -1,6 +1,6 @@
-package dev.m7thh4ck.net.event.impl
+package dev.kura.net.event.impl
 
-import dev.m7thh4ck.net.event.CancellableEvent
+import dev.kura.net.event.CancellableEvent
 import net.minecraft.client.MinecraftClient
 import net.minecraft.util.math.BlockPos
 

@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
 import com.mojang.authlib.GameProfile;
-import dev.m7thh4ck.net.event.impl.*;
+import dev.kura.net.event.impl.*;
 import dev.m7thh4ck.net.managers.impl.EventAccessManager;
 import dev.m7thh4ck.net.mod.module.impl.movement.NoSlow;
 import dev.m7thh4ck.net.mod.module.impl.movement.Velocity;

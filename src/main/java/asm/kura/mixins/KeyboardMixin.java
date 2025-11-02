@@ -1,6 +1,6 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.event.impl.KeyBoardEvent;
+import dev.kura.net.event.impl.KeyBoardEvent;
 import dev.m7thh4ck.net.mod.gui.screen.ClickGUIScreen;
 import net.minecraft.client.Keyboard;
 import net.minecraft.client.MinecraftClient;

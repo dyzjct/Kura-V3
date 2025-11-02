@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.event.EventBus;
-import dev.m7thh4ck.net.event.impl.PacketEvent;
+import dev.kura.net.event.EventBus;
+import dev.kura.net.event.impl.PacketEvent;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.network.ClientConnection;
 import net.minecraft.network.listener.PacketListener;

@@ -1,8 +1,8 @@
 package dev.m7thh4ck.net.managers.impl
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.PacketEvent
-import dev.m7thh4ck.net.event.impl.PlayerMotionEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.PacketEvent
+import dev.kura.net.event.impl.PlayerMotionEvent
 import dev.m7thh4ck.net.util.math.vector.VectorUtils.toVec3d
 import dev.m7thh4ck.net.util.player.RotationUtil
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket

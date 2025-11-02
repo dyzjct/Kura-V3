@@ -1,10 +1,10 @@
 package dev.m7thh4ck.net.mod.module
 
-import dev.m7thh4ck.net.event.EventBus
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.GameLoopEvent
-import dev.m7thh4ck.net.event.impl.KeyBoardEvent
-import dev.m7thh4ck.net.event.impl.PlayerMotionEvent
+import dev.kura.net.event.EventBus
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.GameLoopEvent
+import dev.kura.net.event.impl.KeyBoardEvent
+import dev.kura.net.event.impl.PlayerMotionEvent
 import dev.m7thh4ck.net.mod.module.impl.render.Notification
 import dev.m7thh4ck.net.settings.AbstractSetting
 import dev.m7thh4ck.net.settings.KeyBindSetting

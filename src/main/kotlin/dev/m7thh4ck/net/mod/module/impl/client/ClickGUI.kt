@@ -1,8 +1,8 @@
 package dev.m7thh4ck.net.mod.module.impl.client
 
 import com.mojang.blaze3d.systems.RenderSystem
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.Render2DEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.Render2DEvent
 import dev.m7thh4ck.net.mod.gui.screen.ClickGUIScreen
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module

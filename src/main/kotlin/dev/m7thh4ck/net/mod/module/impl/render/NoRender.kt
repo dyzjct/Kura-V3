@@ -1,8 +1,8 @@
 package dev.m7thh4ck.net.mod.module.impl.render
 
-import dev.m7thh4ck.net.event.eventListener
-import dev.m7thh4ck.net.event.impl.ParticleEvent
-import dev.m7thh4ck.net.event.impl.UpdateWalkingEvent
+import dev.kura.net.event.eventListener
+import dev.kura.net.event.impl.ParticleEvent
+import dev.kura.net.event.impl.UpdateWalkingEvent
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module
 import net.minecraft.client.particle.ExplosionLargeParticle

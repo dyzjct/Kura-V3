@@ -1,6 +1,6 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.event.impl.RenderWorldEvent;
+import dev.kura.net.event.impl.RenderWorldEvent;
 import dev.m7thh4ck.net.mod.module.impl.render.FullBright;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.Camera;
