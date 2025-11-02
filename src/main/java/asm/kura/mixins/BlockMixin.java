@@ -1,6 +1,6 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.mod.module.impl.movement.NoSlow;
+import dev.kura.net.mod.module.impl.movement.NoSlow;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemConvertible;
 import org.spongepowered.asm.mixin.Mixin;

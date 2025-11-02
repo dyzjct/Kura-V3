@@ -3,7 +3,7 @@ package dev.kura.net.manager.impl
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonObject
-import dev.kura.net.KURA
+import dev.kura.net.Kura
 import dev.kura.net.event.impl.ModuleManager
 import dev.kura.net.settings.AbstractSetting
 import dev.kura.net.settings.BooleanSetting
@@ -13,7 +13,7 @@ import dev.kura.net.settings.FloatSetting
 import dev.kura.net.settings.IntSetting
 import dev.kura.net.settings.KeyBindSetting
 import dev.kura.net.settings.StringSetting
-import dev.m7thh4ck.net.util.keyboard.Bind
+import dev.kura.net.utils.keyboard.Bind
 import dev.kura.net.mod.module.Module
 import java.io.File
 import java.nio.charset.StandardCharsets
@@ -21,7 +21,7 @@ import java.nio.file.Files
 
 object ConfigManager {
 
-    private val path = File(KURA.NAME)
+    private val path = File(Kura.NAME)
 
     fun init() {
         initModules()
@@ -160,7 +160,7 @@ object ConfigManager {
             val toggle = moduleJson.get("Toggle").asBoolean
             mod.setEnableSilent(toggle)
         } catch (e: NullPointerException) {
-            KURA.LOGGER.error("Loading config failed! Please delete \"M7thH4ck\" folder and retry")
+            Kura.LOGGER.error("Loading config failed! Please delete \"M7thH4ck\" folder and retry")
         }
 
         val element = moduleJson.get("Settings") ?: return

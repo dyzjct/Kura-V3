@@ -5,7 +5,7 @@ import dev.kura.net.event.impl.ModuleManager
 import dev.kura.net.settings.BooleanSetting
 import dev.kura.net.settings.IntSetting
 import dev.kura.net.settings.StringSetting
-import dev.m7thh4ck.net.util.helper.ChatUtil
+import dev.kura.net.utils.helper.ChatUtil
 
 class ModuleCommand : Command(arrayOf("module")) {
     override fun run(args: Array<String>) {

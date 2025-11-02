@@ -1,9 +1,9 @@
 package dev.kura.net.mod.gui.screen
 
 import dev.kura.net.mod.gui.click.ClickGUIFrame
-import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.impl.client.ClickGUI
-import dev.m7thh4ck.net.util.graphics.Render2DEngine
+import dev.kura.net.mod.module.Category
+import dev.kura.net.mod.module.impl.client.ClickGUI
+import dev.kura.net.utils.graphics.Render2DEngine
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.gui.DrawContext
 import net.minecraft.client.gui.screen.Screen

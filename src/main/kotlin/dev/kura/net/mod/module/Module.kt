@@ -8,11 +8,10 @@ import dev.kura.net.event.impl.PlayerMotionEvent
 import dev.kura.net.settings.AbstractSetting
 import dev.kura.net.settings.KeyBindSetting
 import dev.kura.net.settings.SettingDesigner
-import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.impl.render.Notification
-import dev.m7thh4ck.net.util.helper.ChatUtil
-import dev.m7thh4ck.net.util.keyboard.Bind
-import dev.m7thh4ck.net.util.player.PlayerUtil
+import dev.kura.net.mod.module.impl.render.Notification
+import dev.kura.net.utils.helper.ChatUtil
+import dev.kura.net.utils.keyboard.Bind
+import dev.kura.net.utils.player.PlayerUtil
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.network.ClientPlayNetworkHandler
 import net.minecraft.client.network.ClientPlayerEntity

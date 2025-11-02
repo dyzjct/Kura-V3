@@ -3,8 +3,8 @@ package dev.kura.net.manager.impl
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.PacketEvent
 import dev.kura.net.event.impl.PlayerMotionEvent
-import dev.m7thh4ck.net.util.math.vector.VectorUtils.toVec3d
-import dev.m7thh4ck.net.util.player.RotationUtil
+import dev.kura.net.utils.math.vector.VectorUtils.toVec3d
+import dev.kura.net.utils.player.RotationUtil
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.math.Vec3d

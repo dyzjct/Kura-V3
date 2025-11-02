@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.mod.module.impl.render.FullBright;
-import dev.m7thh4ck.net.mod.module.impl.render.NoRender;
+import dev.kura.net.mod.module.impl.render.FullBright;
+import dev.kura.net.mod.module.impl.render.NoRender;
 import net.minecraft.client.render.LightmapTextureManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

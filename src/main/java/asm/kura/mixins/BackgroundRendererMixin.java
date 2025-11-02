@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import dev.m7thh4ck.net.mod.module.impl.render.NoRender;
+import dev.kura.net.mod.module.impl.render.NoRender;
 import net.minecraft.client.render.BackgroundRenderer;
 import net.minecraft.client.render.Camera;
 import net.minecraft.entity.Entity;

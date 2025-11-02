@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
 import dev.kura.net.event.impl.RenderLivingLabelEvent;
-import dev.m7thh4ck.net.mod.module.impl.render.FullBright;
+import dev.kura.net.mod.module.impl.render.FullBright;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;

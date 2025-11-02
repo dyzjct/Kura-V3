@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "m7thh4ck",
+	"id": "kura",
 	"version": "1.0.0",
-	"name": "M7thH4ck",
+	"name": "Kura",
 	"description": "A hack for Minecraft Anarchy server.",
 	"authors": [
 		"dyzjct",
@@ -15,13 +15,13 @@
 	"environment": "client",
 	"entrypoints": {
 		"main": [
-          "dev.m7thh4ck.net.M7thH4ck::INSTANCE"
+          "dev.kura.net.Kura::INSTANCE"
 		]
 	},
 	"mixins": [
-		"m7thh4ck.mixins.json"
+		"kura.mixins.json"
 	],
-	"accessWidener": "m7thh4ck.accesswidener",
+	"accessWidener": "kura.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.14.24",
 		"fabric": "*",

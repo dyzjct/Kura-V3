@@ -3,7 +3,7 @@ package dev.kura.net.manager.impl
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.PacketEvent
 import dev.kura.net.event.impl.TickEvent
-import dev.m7thh4ck.net.util.Util
+import dev.kura.net.utils.Util
 import net.minecraft.network.packet.s2c.play.EntityVelocityUpdateS2CPacket
 import kotlin.math.hypot
 import kotlin.math.max

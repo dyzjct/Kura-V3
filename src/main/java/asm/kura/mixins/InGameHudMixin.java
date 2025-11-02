@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import dev.kura.net.KURA;
+import dev.kura.net.Kura;
 import dev.kura.net.event.impl.Render2DEvent;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -23,7 +23,7 @@ public class InGameHudMixin {
     @Inject(method = "render", at = @At("TAIL"))
     private void render(DrawContext context, float tickDelta, CallbackInfo ci) {
         if (MinecraftClient.getInstance().player != null && MinecraftClient.getInstance().world != null) {
-            client.getProfiler().push(KURA.MODID + "_render_2d");
+            client.getProfiler().push(Kura.MODID + "_render_2d");
             Render2DEvent event = new Render2DEvent(context);
             event.post();
             RenderSystem.applyModelViewMatrix();

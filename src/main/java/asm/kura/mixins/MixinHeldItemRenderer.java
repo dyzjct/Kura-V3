@@ -1,8 +1,8 @@
 package asm.kura.mixins;
 
 import dev.kura.net.event.impl.EventHeldItemRenderer;
-import dev.m7thh4ck.net.mod.module.impl.render.Animation;
-import dev.m7thh4ck.net.mod.module.impl.render.ViewModel;
+import dev.kura.net.mod.module.impl.render.Animation;
+import dev.kura.net.mod.module.impl.render.ViewModel;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.render.VertexConsumerProvider;

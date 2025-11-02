@@ -2,7 +2,7 @@ package dev.kura.net.command.impl
 
 import dev.kura.net.command.Command
 import dev.kura.net.event.impl.ModuleManager
-import dev.m7thh4ck.net.util.helper.ChatUtil
+import dev.kura.net.utils.helper.ChatUtil
 import net.minecraft.client.util.InputUtil
 import net.minecraft.util.Formatting
 import java.util.*

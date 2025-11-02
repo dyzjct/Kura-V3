@@ -1,6 +1,6 @@
 package asm.kura.mixins;
 
-import dev.m7thh4ck.net.mod.module.impl.movement.Velocity;
+import dev.kura.net.mod.module.impl.movement.Velocity;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.util.math.Direction;
 import org.spongepowered.asm.mixin.Mixin;

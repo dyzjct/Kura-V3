@@ -1,0 +1,38 @@
+{
+  "required": true,
+  "package": "asm.kura",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "mixins.MixinEntityLiving",
+    "mixins.WorldMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "mixins.BackgroundRendererMixin",
+    "mixins.BipedEntityModelMixin",
+    "mixins.BlockMixin",
+    "mixins.ChatScreenMixin",
+    "mixins.ClientConnectionMixin",
+    "mixins.ClientPlayerEntityMixin",
+    "mixins.ClientPlayerInteractionManagerMixin",
+    "mixins.ClientPlayNetworkHandlerMixin",
+    "mixins.EntityMixin",
+    "mixins.EntityRendererMixin",
+    "mixins.ExplosionMixin",
+    "mixins.FlowableFluidMixin",
+    "mixins.GameRendererMixin",
+    "mixins.InGameHudMixin",
+    "mixins.InGameOverlayRendererMixin",
+    "mixins.KeyboardMixin",
+    "mixins.LightmapTextureManagerMixin",
+    "mixins.MinecraftClientMixin",
+    "mixins.MixinHeldItemRenderer",
+    "mixins.MouseMixin",
+    "mixins.ParticleManagerMixin",
+    "mixins.RaycastContextMixin",
+    "mixins.Vec3dMixin",
+    "mixins.WorldRendererMixin"
+  ]
+}

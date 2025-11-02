@@ -2,7 +2,7 @@ package dev.kura.net.command.impl
 
 import dev.kura.net.command.Command
 import dev.kura.net.manager.impl.CommandManager
-import dev.m7thh4ck.net.util.helper.ChatUtil
+import dev.kura.net.utils.helper.ChatUtil
 
 class PrefixCommand: Command(arrayOf("prefix")) {
     override fun run(args: Array<String>) {

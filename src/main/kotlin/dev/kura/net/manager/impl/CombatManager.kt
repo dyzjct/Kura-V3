@@ -3,8 +3,8 @@ package dev.kura.net.manager.impl
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.CrystalSetDeadEvent
 import dev.kura.net.event.impl.PacketEvent
-import dev.m7thh4ck.net.util.Wrapper
-import dev.m7thh4ck.net.util.math.vector.distanceSqTo
+import dev.kura.net.utils.Wrapper
+import dev.kura.net.utils.math.vector.distanceSqTo
 import net.minecraft.client.MinecraftClient
 import net.minecraft.entity.Entity
 import net.minecraft.entity.decoration.EndCrystalEntity

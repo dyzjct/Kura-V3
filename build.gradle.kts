@@ -53,7 +53,7 @@ dependencies {
 }
 
 loom {
-    accessWidenerPath.assign(file("src/main/resources/m7thh4ck.accesswidener"))
+    accessWidenerPath.assign(file("src/main/resources/kura.accesswidener"))
 }
 
 tasks.processResources {

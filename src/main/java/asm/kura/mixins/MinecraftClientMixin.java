@@ -1,6 +1,6 @@
 package asm.kura.mixins;
 
-import dev.kura.net.KURA;
+import dev.kura.net.Kura;
 import dev.kura.net.event.impl.GameLoopEvent;
 import dev.kura.net.event.impl.TickEvent;
 import net.minecraft.client.MinecraftClient;
@@ -14,12 +14,12 @@ public abstract class MinecraftClientMixin {
 
     @Inject(method = "run", at = @At("HEAD"))
     public void run(CallbackInfo ci) {
-        KURA.load();
+        Kura.load();
     }
 
     @Inject(method = "stop", at = @At("HEAD"))
     public void stop(CallbackInfo ci) {
-        KURA.unload();
+        Kura.unload();
     }
 
     @Inject(method = "tick", at = @At("HEAD"))

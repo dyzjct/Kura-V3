@@ -2,12 +2,12 @@ package dev.kura.net.mod.gui.click.impl
 
 import dev.kura.net.mod.gui.click.Component
 import dev.kura.net.mod.gui.click.ModuleButton
-import dev.m7thh4ck.net.mod.module.impl.client.ClickGUI
+import dev.kura.net.mod.module.impl.client.ClickGUI
 import dev.kura.net.settings.AbstractSetting
 import dev.kura.net.settings.BooleanSetting
-import dev.m7thh4ck.net.util.graphics.Render2DEngine
-import dev.m7thh4ck.net.util.graphics.TextUtil
-import dev.m7thh4ck.net.util.graphics.color.ColorRGB
+import dev.kura.net.utils.graphics.Render2DEngine
+import dev.kura.net.utils.graphics.TextUtil
+import dev.kura.net.utils.graphics.color.ColorRGB
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.gui.DrawContext
 import java.awt.Color

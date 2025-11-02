@@ -1,13 +1,11 @@
 package asm.kura.mixins;
 
 
-import dev.m7thh4ck.net.mod.module.impl.render.Animation;
+import dev.kura.net.mod.module.impl.render.Animation;
 import net.minecraft.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 

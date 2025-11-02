@@ -1,6 +1,6 @@
 package asm.kura.mixins;
 
-import dev.kura.net.KURA;
+import dev.kura.net.Kura;
 import dev.kura.net.manager.impl.CommandManager;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import org.spongepowered.asm.mixin.Mixin;
@@ -14,7 +14,7 @@ public class ClientPlayNetworkHandlerMixin {
     @Inject(method = "sendChatMessage", at = @At("HEAD"), cancellable = true)
     private void onSendChatMessage(String message, CallbackInfo ci) {
         if (message.charAt(0) == CommandManager.INSTANCE.getPrefix()) {
-            KURA.LOGGER.info("command");
+            Kura.LOGGER.info("command");
             CommandManager.INSTANCE.run(message);
             ci.cancel();
         }

@@ -2,10 +2,10 @@ package asm.kura.mixins;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import dev.kura.net.event.impl.Render3DEvent;
-import dev.m7thh4ck.net.mod.module.impl.render.AspectRatio;
-import dev.m7thh4ck.net.mod.module.impl.render.CustomFov;
-import dev.m7thh4ck.net.mod.module.impl.render.NoRender;
-import dev.m7thh4ck.net.util.graphics.Render3DEngine;
+import dev.kura.net.mod.module.impl.render.AspectRatio;
+import dev.kura.net.mod.module.impl.render.CustomFov;
+import dev.kura.net.mod.module.impl.render.NoRender;
+import dev.kura.net.utils.graphics.Render3DEngine;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.render.GameRenderer;

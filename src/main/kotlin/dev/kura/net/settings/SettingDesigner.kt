@@ -1,6 +1,6 @@
 package dev.kura.net.settings
 
-import dev.m7thh4ck.net.util.keyboard.Bind
+import dev.kura.net.utils.keyboard.Bind
 
 interface SettingDesigner<T : Any> {
     fun T.setting(
