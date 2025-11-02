@@ -1,6 +1,6 @@
 package dev.m7thh4ck.asm.mixin;
 
-import dev.m7thh4ck.net.M7thH4ck;
+import dev.m7thh4ck.net.KURA;
 import dev.m7thh4ck.net.managers.impl.CommandManager;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import org.spongepowered.asm.mixin.Mixin;
@@ -14,7 +14,7 @@ public class ClientPlayNetworkHandlerMixin {
     @Inject(method = "sendChatMessage", at = @At("HEAD"), cancellable = true)
     private void onSendChatMessage(String message, CallbackInfo ci) {
         if (message.charAt(0) == CommandManager.INSTANCE.getPrefix()) {
-            M7thH4ck.LOGGER.info("command");
+            KURA.LOGGER.info("command");
             CommandManager.INSTANCE.run(message);
             ci.cancel();
         }

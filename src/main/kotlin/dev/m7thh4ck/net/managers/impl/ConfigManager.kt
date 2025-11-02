@@ -3,7 +3,7 @@ package dev.m7thh4ck.net.managers.impl
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonObject
-import dev.m7thh4ck.net.M7thH4ck
+import dev.m7thh4ck.net.KURA
 import dev.m7thh4ck.net.settings.*
 import dev.m7thh4ck.net.util.keyboard.Bind
 import dev.m7thh4ck.net.mod.module.Module
@@ -13,7 +13,7 @@ import java.nio.file.Files
 
 object ConfigManager {
 
-    private val path = File(M7thH4ck.NAME)
+    private val path = File(KURA.NAME)
 
     fun init() {
         initModules()
@@ -152,7 +152,7 @@ object ConfigManager {
             val toggle = moduleJson.get("Toggle").asBoolean
             mod.setEnableSilent(toggle)
         } catch (e: NullPointerException) {
-            M7thH4ck.LOGGER.error("Loading config failed! Please delete \"M7thH4ck\" folder and retry")
+            KURA.LOGGER.error("Loading config failed! Please delete \"M7thH4ck\" folder and retry")
         }
 
         val element = moduleJson.get("Settings") ?: return

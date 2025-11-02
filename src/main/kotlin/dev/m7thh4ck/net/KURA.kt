@@ -5,9 +5,9 @@ import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
 
 
-object M7thH4ck : ModInitializer {
+object KURA : ModInitializer {
 
-    //                            _ooOoo_
+//                            _ooOoo_
 //                           o8888888o
 //                           88" . "88
 //                           (| -_- |)
@@ -74,21 +74,21 @@ object M7thH4ck : ModInitializer {
     override fun onInitialize() {
     }
 
-    const val MODID = "m7thh4ck"
+    const val MODID = "kura"
 
     @JvmField
-    val NAME = "M7thH4ck"
+    val NAME = "Kura"
 
     @JvmField
-    val VERSION = "1.0.0"
+    val VERSION = "3.0.0-alpha"
 
     @JvmField
-    val LOGGER = LoggerFactory.getLogger("m7thh4ck")!!
+    val LOGGER = LoggerFactory.getLogger("kura")!!
 
     @JvmStatic
     fun load() {
         Managers.init()
-        LOGGER.info("Initialized M7thH4ck")
+        LOGGER.info("Initialized KURA V3")
     }
 
     @JvmStatic

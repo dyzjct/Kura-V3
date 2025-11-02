@@ -1,6 +1,6 @@
 package dev.m7thh4ck.asm.mixin;
 
-import dev.m7thh4ck.net.M7thH4ck;
+import dev.m7thh4ck.net.KURA;
 import dev.m7thh4ck.net.event.impl.GameLoopEvent;
 import dev.m7thh4ck.net.event.impl.TickEvent;
 import net.minecraft.client.MinecraftClient;
@@ -14,12 +14,12 @@ public abstract class MinecraftClientMixin {
 
     @Inject(method = "run", at = @At("HEAD"))
     public void run(CallbackInfo ci) {
-        M7thH4ck.load();
+        KURA.load();
     }
 
     @Inject(method = "stop", at = @At("HEAD"))
     public void stop(CallbackInfo ci) {
-        M7thH4ck.unload();
+        KURA.unload();
     }
 
     @Inject(method = "tick", at = @At("HEAD"))

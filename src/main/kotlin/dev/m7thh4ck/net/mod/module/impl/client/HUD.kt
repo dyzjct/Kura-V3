@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.mod.module.impl.client
 
 import com.mojang.blaze3d.platform.GlStateManager
-import dev.m7thh4ck.net.M7thH4ck
+import dev.m7thh4ck.net.KURA
 import dev.m7thh4ck.net.event.eventListener
 import dev.m7thh4ck.net.event.impl.Render2DEvent
 import dev.m7thh4ck.net.managers.impl.ModuleManager
@@ -52,13 +52,13 @@ object HUD : Module("HUD", Category.Client) {
             if (waterMark) {
                 if (version) TextUtil.drawStringWithScale(
                     event.context,
-                    M7thH4ck.NAME + " v" + M7thH4ck.VERSION,
+                    KURA.NAME + " v" + KURA.VERSION,
                     waterMarkX.toFloat(), waterMarkY.toFloat(),
                     getColor(), shadow, waterMarkScale
                 )
                 else TextUtil.drawStringWithScale(
                     event.context,
-                    M7thH4ck.NAME,
+                    KURA.NAME,
                     waterMarkX.toFloat(), waterMarkY.toFloat(),
                     getColor(), shadow, waterMarkScale
                 )
