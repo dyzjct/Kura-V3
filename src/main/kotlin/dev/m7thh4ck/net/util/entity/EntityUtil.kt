@@ -1,6 +1,6 @@
 package dev.m7thh4ck.net.util.entity
 
-import dev.m7thh4ck.net.managers.impl.FriendManager
+import dev.kura.net.manager.impl.FriendManager
 import dev.m7thh4ck.net.util.Util
 import dev.m7thh4ck.net.util.extension.fastFloor
 import dev.m7thh4ck.net.util.extension.sq

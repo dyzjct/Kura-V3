@@ -1,6 +1,6 @@
 package dev.m7thh4ck.net.util.player
 
-import dev.m7thh4ck.net.managers.impl.FriendManager
+import dev.kura.net.manager.impl.FriendManager
 import dev.m7thh4ck.net.util.Wrapper.player
 import dev.m7thh4ck.net.util.Wrapper.world
 import dev.m7thh4ck.net.util.entity.EntityUtil.eyePosition

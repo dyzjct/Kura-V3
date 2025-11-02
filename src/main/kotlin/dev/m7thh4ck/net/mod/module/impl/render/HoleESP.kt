@@ -7,7 +7,7 @@ import dev.m7thh4ck.net.util.entity.EntityUtil.aroundBlock
 import dev.m7thh4ck.net.util.graphics.Render3DEngine
 import dev.m7thh4ck.net.util.world.BlockUtil.blockType
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import net.minecraft.block.Blocks
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.math.Box

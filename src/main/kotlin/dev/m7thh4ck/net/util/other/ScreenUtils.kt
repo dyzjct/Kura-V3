@@ -1,6 +1,6 @@
 package dev.m7thh4ck.net.util.other
 
-import dev.m7thh4ck.net.mod.gui.screen.ClickGUIScreen
+import dev.kura.net.mod.gui.screen.ClickGUIScreen
 import dev.m7thh4ck.net.util.Util
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.gui.screen.ChatScreen

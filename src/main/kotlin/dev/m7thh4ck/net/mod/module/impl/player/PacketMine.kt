@@ -5,9 +5,9 @@ import dev.kura.net.event.impl.BlockEvent
 import dev.kura.net.event.impl.GameLoopEvent
 import dev.kura.net.event.impl.PlayerMotionEvent
 import dev.kura.net.event.impl.Render3DEvent
-import dev.m7thh4ck.net.managers.impl.RotationManager
+import dev.kura.net.manager.impl.RotationManager
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import dev.m7thh4ck.net.mod.module.impl.player.PacketMine.PacketType.Start
 import dev.m7thh4ck.net.mod.module.impl.player.PacketMine.PacketType.Stop
 import dev.m7thh4ck.net.util.entity.EntityUtil.eyePosition

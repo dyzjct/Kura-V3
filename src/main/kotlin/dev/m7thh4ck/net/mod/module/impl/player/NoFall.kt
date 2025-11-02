@@ -4,7 +4,7 @@ import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.PacketEvent
 import dev.m7thh4ck.net.util.interfaces.DisplayEnum
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket
 
 

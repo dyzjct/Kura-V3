@@ -3,9 +3,9 @@ package dev.m7thh4ck.net.mod.module.impl.render
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.Render2DEvent
 import dev.kura.net.event.impl.RenderLivingLabelEvent
-import dev.m7thh4ck.net.managers.impl.FriendManager
+import dev.kura.net.manager.impl.FriendManager
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import dev.m7thh4ck.net.util.graphics.Render2DEngine
 import dev.m7thh4ck.net.util.graphics.Render3DEngine
 import dev.m7thh4ck.net.util.graphics.TextUtil

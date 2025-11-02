@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
 import dev.kura.net.KURA;
-import dev.m7thh4ck.net.managers.impl.CommandManager;
+import dev.kura.net.manager.impl.CommandManager;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

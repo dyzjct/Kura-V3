@@ -1,7 +1,7 @@
 package dev.kura.net.command.impl
 
 import dev.kura.net.command.Command
-import dev.m7thh4ck.net.managers.impl.CommandManager
+import dev.kura.net.manager.impl.CommandManager
 import dev.m7thh4ck.net.util.helper.ChatUtil
 
 class PrefixCommand: Command(arrayOf("prefix")) {

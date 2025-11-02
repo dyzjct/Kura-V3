@@ -3,10 +3,10 @@ package dev.m7thh4ck.net.mod.module.impl.movement
 import dev.kura.net.asmimpl.IVec3d
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.PlayerMoveEvent
-import dev.m7thh4ck.net.managers.impl.MovementManager
-import dev.m7thh4ck.net.managers.impl.MovementManager.boostSpeed
+import dev.kura.net.manager.impl.MovementManager
+import dev.kura.net.manager.impl.MovementManager.boostSpeed
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import dev.m7thh4ck.net.util.entity.EntityUtil.isInBurrow
 import dev.m7thh4ck.net.util.entity.EntityUtil.isMoving
 import dev.m7thh4ck.net.util.player.PlayerUtil.baseMoveSpeed

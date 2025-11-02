@@ -6,7 +6,7 @@ import dev.m7thh4ck.net.util.extension.floorToInt
 import dev.m7thh4ck.net.util.world.BlockUtil.blockType
 import dev.kura.net.asmimpl.IVec3d
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import net.minecraft.block.Blocks
 import net.minecraft.entity.effect.StatusEffects
 import net.minecraft.registry.tag.FluidTags

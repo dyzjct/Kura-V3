@@ -3,7 +3,7 @@ package dev.m7thh4ck.net.mod.module.impl.misc
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.MessageSentEvent
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 
 object ChatSuffix : Module("ChatSuffix", Category.Misc) {
 

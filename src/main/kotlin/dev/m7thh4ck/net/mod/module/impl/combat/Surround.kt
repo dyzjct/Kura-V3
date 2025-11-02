@@ -5,9 +5,9 @@ import dev.kura.net.event.impl.GameLoopEvent
 import dev.kura.net.event.impl.PlayerMoveEvent
 import dev.kura.net.event.impl.TickEvent
 import dev.kura.net.event.impl.WorldEvent
-import dev.m7thh4ck.net.managers.impl.RotationManager
+import dev.kura.net.manager.impl.RotationManager
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import dev.m7thh4ck.net.mod.module.impl.movement.Step
 import dev.m7thh4ck.net.mod.module.impl.player.PacketMine
 import dev.m7thh4ck.net.mod.module.impl.render.PlaceRender

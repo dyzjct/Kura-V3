@@ -3,7 +3,7 @@ package dev.m7thh4ck.net.mod.module.impl.combat
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.PlayerMotionEvent
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import dev.m7thh4ck.net.mod.module.impl.combat.HolePush.doHolePush
 import dev.m7thh4ck.net.mod.module.impl.player.PacketMine
 import dev.m7thh4ck.net.mod.module.impl.player.PacketMine.hookPos

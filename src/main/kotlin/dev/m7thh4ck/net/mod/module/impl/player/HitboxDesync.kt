@@ -3,7 +3,7 @@ package dev.m7thh4ck.net.mod.module.impl.player
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.TickEvent
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import dev.m7thh4ck.net.util.helper.ChatUtil
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.math.Direction

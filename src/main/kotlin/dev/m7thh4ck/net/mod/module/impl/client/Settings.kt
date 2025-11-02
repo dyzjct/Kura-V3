@@ -1,7 +1,7 @@
 package dev.m7thh4ck.net.mod.module.impl.client
 
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 
 object Settings:Module(name = "Settings",Category.Client) {
     val swingHand by setting("SwingHand",SwingMode.MainHand)

@@ -4,7 +4,7 @@ import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.PlayerUpdateEvent
 import dev.m7thh4ck.net.util.player.PlayerUtil
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 
 object Sprint : Module("Sprint", Category.Movement) {
 

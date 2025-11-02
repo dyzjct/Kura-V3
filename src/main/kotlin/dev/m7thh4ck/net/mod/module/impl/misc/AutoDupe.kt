@@ -4,7 +4,7 @@ import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.TickEvent
 import dev.m7thh4ck.net.util.interfaces.DisplayEnum
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import dev.m7thh4ck.net.mod.module.impl.misc.autodupe.Xin231125Dupe
 
 object AutoDupe: Module("AutoDupe", Category.Misc) {

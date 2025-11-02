@@ -1,10 +1,7 @@
 package dev.m7thh4ck.net.mod.module.impl.render
 
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
-import dev.m7thh4ck.net.mod.module.impl.combat.M7thAura
-import dev.m7thh4ck.net.mod.module.impl.combat.M7thAura.setting
-import dev.m7thh4ck.net.settings.Setting
+import dev.kura.net.mod.module.Module
 
 object Animation : Module("Animation", Category.Render) {
      val slowAnimation by setting("SlowAnimation", true)

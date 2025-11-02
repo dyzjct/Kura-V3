@@ -1,8 +1,6 @@
 package dev.m7thh4ck.net.util.world
 
-import dev.m7thh4ck.net.managers.impl.RotationManager
-import dev.m7thh4ck.net.mod.module.impl.client.ClickGUI
-import dev.m7thh4ck.net.mod.module.impl.combat.SelfFill
+import dev.kura.net.manager.impl.RotationManager
 import dev.m7thh4ck.net.mod.module.impl.combat.SelfFill.rotate
 import dev.m7thh4ck.net.mod.module.impl.player.PacketMine.Tick
 import dev.m7thh4ck.net.mod.module.impl.player.PacketMine.disable

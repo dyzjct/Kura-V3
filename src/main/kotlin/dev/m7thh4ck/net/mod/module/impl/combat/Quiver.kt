@@ -2,9 +2,9 @@ package dev.m7thh4ck.net.mod.module.impl.combat
 
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.StopUsingItemEvent
-import dev.m7thh4ck.net.managers.impl.RotationManager
+import dev.kura.net.manager.impl.RotationManager
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import net.minecraft.item.Items
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket.LookAndOnGround
 

@@ -6,7 +6,7 @@ import dev.kura.net.event.impl.PacketEvent
 import dev.kura.net.event.impl.TickEvent
 import dev.m7thh4ck.net.util.interfaces.DisplayEnum
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket
 import net.minecraft.network.packet.s2c.play.PlayerPositionLookS2CPacket
 import kotlin.math.cos

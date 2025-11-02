@@ -3,9 +3,9 @@ package dev.m7thh4ck.net.mod.module.impl.client
 import com.mojang.blaze3d.systems.RenderSystem
 import dev.kura.net.event.eventListener
 import dev.kura.net.event.impl.Render2DEvent
-import dev.m7thh4ck.net.mod.gui.screen.ClickGUIScreen
+import dev.kura.net.mod.gui.screen.ClickGUIScreen
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import dev.m7thh4ck.net.mod.module.impl.client.HUD.height
 import dev.m7thh4ck.net.mod.module.impl.client.HUD.width
 import dev.m7thh4ck.net.mod.module.impl.render.SytRender

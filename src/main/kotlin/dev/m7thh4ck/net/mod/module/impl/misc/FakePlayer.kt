@@ -2,7 +2,7 @@ package dev.m7thh4ck.net.mod.module.impl.misc
 
 import com.mojang.authlib.GameProfile
 import dev.m7thh4ck.net.mod.module.Category
-import dev.m7thh4ck.net.mod.module.Module
+import dev.kura.net.mod.module.Module
 import net.minecraft.client.network.OtherClientPlayerEntity
 import net.minecraft.entity.Entity
 import java.util.*

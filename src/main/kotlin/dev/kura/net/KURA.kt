@@ -1,6 +1,6 @@
 package dev.kura.net
 
-import dev.m7thh4ck.net.managers.Managers
+import dev.kura.net.manager.Manager
 import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
 
@@ -86,12 +86,12 @@ object KURA : ModInitializer {
 
     @JvmStatic
     fun load() {
-        Managers.init()
+        Manager.init()
         LOGGER.info("Initialized KURA V3")
     }
 
     @JvmStatic
     fun unload() {
-        Managers.unload()
+        Manager.unload()
     }
 }

@@ -1,7 +1,7 @@
 package asm.kura.mixins;
 
 import dev.kura.net.event.impl.MessageSentEvent;
-import dev.m7thh4ck.net.managers.impl.CommandManager;
+import dev.kura.net.manager.impl.CommandManager;
 import net.minecraft.client.gui.screen.ChatScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
