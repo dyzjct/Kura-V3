@@ -4,7 +4,7 @@ import dev.m7thh4ck.net.event.eventListener
 import dev.m7thh4ck.net.event.impl.PlayerMoveEvent
 import dev.m7thh4ck.net.util.extension.floorToInt
 import dev.m7thh4ck.net.util.world.BlockUtil.blockType
-import dev.m7thh4ck.net.asmimpl.IVec3d
+import dev.kura.net.asmimpl.IVec3d
 import dev.m7thh4ck.net.mod.module.Category
 import dev.m7thh4ck.net.mod.module.Module
 import net.minecraft.block.Blocks

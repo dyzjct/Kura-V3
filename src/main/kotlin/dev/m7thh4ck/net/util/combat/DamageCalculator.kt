@@ -4,8 +4,8 @@ import dev.m7thh4ck.net.event.eventListener
 import dev.m7thh4ck.net.event.impl.PlayerMoveEvent
 import dev.m7thh4ck.net.util.Util
 import dev.m7thh4ck.net.util.extension.sq
-import dev.m7thh4ck.net.asmimpl.IExplosion
-import dev.m7thh4ck.net.asmimpl.IRaycastContext
+import dev.kura.net.asmimpl.IExplosion
+import dev.kura.net.asmimpl.IRaycastContext
 import net.minecraft.block.BlockState
 import net.minecraft.block.Blocks
 import net.minecraft.enchantment.EnchantmentHelper

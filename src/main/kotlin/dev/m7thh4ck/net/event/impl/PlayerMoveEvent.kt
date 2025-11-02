@@ -1,6 +1,6 @@
 package dev.m7thh4ck.net.event.impl
 
-import dev.m7thh4ck.net.asmimpl.IVec3d
+import dev.kura.net.asmimpl.IVec3d
 import dev.m7thh4ck.net.event.CancellableEvent
 import net.minecraft.client.MinecraftClient
 import net.minecraft.entity.MovementType

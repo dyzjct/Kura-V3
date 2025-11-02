@@ -1,6 +1,5 @@
 package dev.m7thh4ck.net.util.other
 
-import dev.m7thh4ck.net.mod.module.impl.combat.AnchorAura
 import dev.m7thh4ck.net.util.Wrapper.world
 import dev.m7thh4ck.net.util.extension.fastFloor
 import net.minecraft.block.Block

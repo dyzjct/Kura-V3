@@ -3,7 +3,7 @@ package dev.m7thh4ck.net.managers.impl
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonObject
-import dev.m7thh4ck.net.KURA
+import dev.kura.net.KURA
 import dev.m7thh4ck.net.settings.*
 import dev.m7thh4ck.net.util.keyboard.Bind
 import dev.m7thh4ck.net.mod.module.Module

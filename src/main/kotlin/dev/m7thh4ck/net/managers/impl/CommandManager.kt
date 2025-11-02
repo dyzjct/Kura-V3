@@ -1,8 +1,13 @@
 package dev.m7thh4ck.net.managers.impl
 
-import dev.m7thh4ck.net.command.Command
-import dev.m7thh4ck.net.command.impl.*
-import dev.m7thh4ck.net.command.impl.*
+import dev.kura.net.command.Command
+import dev.kura.net.command.impl.BindCommand
+import dev.kura.net.command.impl.ConfigCommand
+import dev.kura.net.command.impl.FriendCommand
+import dev.kura.net.command.impl.HelpCommand
+import dev.kura.net.command.impl.ModuleCommand
+import dev.kura.net.command.impl.PrefixCommand
+import dev.kura.net.command.impl.ToggleCommand
 
 object CommandManager {
     private val commandMap = hashMapOf<Array<String>, Command>()
