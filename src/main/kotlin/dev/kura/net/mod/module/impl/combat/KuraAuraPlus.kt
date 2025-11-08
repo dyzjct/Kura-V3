@@ -6,13 +6,16 @@ import dev.kura.net.event.impl.TickEvent
 import dev.kura.net.manager.impl.RotationManager
 import dev.kura.net.mod.module.Category
 import dev.kura.net.mod.module.Module
+import dev.kura.net.utils.animation.SmoothBoxRenderer
 import dev.kura.net.utils.combat.CrystalUtil
 import dev.kura.net.utils.combat.DamageCalculator
 import dev.kura.net.utils.entity.EntityUtil.aroundBlock
 import dev.kura.net.utils.entity.EntityUtil.isVanished
+import dev.kura.net.utils.entity.scale
 import dev.kura.net.utils.extension.sq
 import dev.kura.net.utils.graphics.ESPRenderer
 import dev.kura.net.utils.graphics.easing.Easing
+import dev.kura.net.utils.helper.ChatUtil
 import dev.kura.net.utils.interfaces.DisplayEnum
 import dev.kura.net.utils.math.TimerUtils
 import dev.kura.net.utils.math.vector.distanceSqTo
@@ -32,7 +35,7 @@ import java.awt.Color
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.CopyOnWriteArrayList
 
-object M7thAura : Module("M7thAura", Category.Combat, true) {
+object KuraAuraPlus : Module("KuraAura+", Category.Combat, true) {
 
     private val page by setting("Page", Page.General)
 
@@ -90,7 +93,10 @@ object M7thAura : Module("M7thAura", Category.Combat, true) {
     private var crystalList = CopyOnWriteArrayList<EndCrystalEntity>()
     private var placeList = CopyOnWriteArrayList<PlaceInfo>()
 
+    private val boxRenderer = SmoothBoxRenderer(durationMs = movingLength.toLong())
+
     private val renderMap = ConcurrentHashMap<Vec3d, Long>()
+
     private var currentPos: RenderPos? = null
     private var prevPos: RenderPos? = null
     private var lastRenderPos: RenderPos? = null
@@ -155,29 +161,57 @@ object M7thAura : Module("M7thAura", Category.Combat, true) {
                     renderMap.remove(pos)
                 }
             }
-            prevPos?.let { prev ->
-                currentPos?.let {
-                    if (renderMode != RenderMode.Scale && renderMode != RenderMode.Fade) {
-                        val scale = if (renderMap.none()) {
-                            Easing.IN_CUBIC.dec(Easing.toDelta(it.long, fadeLength))
-                        } else Easing.OUT_CUBIC.inc(Easing.toDelta(it.long, fadeLength))
-                        val multiplier = Easing.OUT_QUART.inc(
-                            Easing.toDelta(
-                                lastUpdateTime, movingLength
-                            )
-                        )
-                        val motionRenderPos = prev.pos.add(it.pos.subtract(prev.pos).multiply(multiplier.toDouble()))
-                        val box = toRenderBox(if (renderMode == RenderMode.Motion) motionRenderPos else it.pos, scale)
-                        val renderer = ESPRenderer()
-
-                        renderer.aFilled = (fillAlpha * scale).toInt()
-                        renderer.aOutline = (lineAlpha * scale).toInt()
-                        renderer.add(box, color)
-                        renderer.render(event.matrices, false)
-                        lastRenderPos = it
+            if (renderMode != RenderMode.Scale && renderMode != RenderMode.Fade) {
+                boxRenderer.getBox(motionEnabled = (renderMode == RenderMode.Motion))?.let { box ->
+                    boxRenderer.setDuration(movingLength.toLong())
+                    val nullCheck = System.currentTimeMillis() - boxRenderer.getLastUpdateTime() > fadeLength
+                    val scale = if (!nullCheck) {
+                        Easing.IN_CUBIC.dec(Easing.toDelta(boxRenderer.getLastUpdateTime(), fadeLength))
+                    } else Easing.OUT_CUBIC.inc(Easing.toDelta(boxRenderer.getLastUpdateTime(), fadeLength))
+                    if (nullCheck) {
+                        boxRenderer.reset()
                     }
+//                    if (renderMap.none()) {
+//                        if (boxRenderer.getLastUpdateTime() - System.currentTimeMillis() > fadeLength) {
+//                            boxRenderer.reset()
+//                        }
+//                    }
+
+                    val renderer = ESPRenderer()
+                    renderer.aFilled = (fillAlpha * scale).toInt()
+                    renderer.aOutline = (lineAlpha * scale).toInt()
+                    ChatUtil.sendRawMessage(scale.toString())
+                    renderer.add(box.scale(if (renderMode == RenderMode.Motion) scale else 1f), color)
+                    renderer.render(event.matrices, false)
                 }
             }
+//            prevPos?.let { prev ->
+//                currentPos?.let {
+//                    if (renderMode != RenderMode.Scale && renderMode != RenderMode.Fade) {
+//                        val scale = if (renderMap.none()) {
+//                            Easing.IN_CUBIC.dec(Easing.toDelta(it.long, fadeLength))
+//                        } else Easing.OUT_CUBIC.inc(Easing.toDelta(it.long, fadeLength))
+//                        val multiplier = Easing.OUT_QUART.inc(
+//                            Easing.toDelta(
+//                                lastUpdateTime, movingLength
+//                            )
+//                        )
+//                        val motionRenderPos = prev.pos.add(it.pos.subtract(prev.pos).multiply(multiplier.toDouble()))
+//                        val box = toRenderBox(if (renderMode == RenderMode.Motion) motionRenderPos else it.pos, scale)
+//                        val renderer = ESPRenderer()
+//
+//                        renderer.aFilled = (fillAlpha * scale).toInt()
+//                        renderer.aOutline = (lineAlpha * scale).toInt()
+//                        renderer.add(box, color)
+//                        renderer.render(event.matrices, false)
+//                        lastRenderPos = it
+//                    }
+//                }
+//            }
+        }
+
+        onDisable {
+            boxRenderer.reset()
         }
     }
 
@@ -186,6 +220,7 @@ object M7thAura : Module("M7thAura", Category.Combat, true) {
         placeList.first().pos.let { cryPos ->
             InventoryUtil.findItemInHotbar(Items.END_CRYSTAL)?.let { crySlot ->
                 currentPos = RenderPos(cryPos.down().toCenterPos(), System.currentTimeMillis())
+                boxRenderer.updateTarget(cryPos.down().toCenterPos())
                 prevPos = lastRenderPos ?: currentPos
                 renderMap[cryPos.down().toCenterPos()] = System.currentTimeMillis()
                 if (placeTimer.tickAndReset(placeDelay)) {
@@ -223,6 +258,7 @@ object M7thAura : Module("M7thAura", Category.Combat, true) {
             }
         }
     }
+
     fun divide(frequency: Int): ArrayList<Int> {
         val freqAttacks = ArrayList<Int>()
         var size = 0
@@ -250,7 +286,7 @@ object M7thAura : Module("M7thAura", Category.Combat, true) {
     private fun doBreak() {
         if (crystalList.none()) return
         crystalList.first().let { cry ->
-            if (attackTimer.tickAndReset(breakDelay) || !(!divide(frequency).contains(ticksPassed)) ) {
+            if (attackTimer.tickAndReset(breakDelay) || !(!divide(frequency).contains(ticksPassed))) {
                 world.entities.forEach {
                     if (it is EndCrystalEntity && it.boundingBox.intersects(cry.boundingBox)) {
                         if (rotate) RotationManager.addRotation(cry.blockPos, 3)
@@ -275,7 +311,6 @@ object M7thAura : Module("M7thAura", Category.Combat, true) {
                     }
                 }
             }
-
         }
     }
 

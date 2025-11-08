@@ -14,7 +14,7 @@ import dev.kura.net.mod.module.impl.combat.CityMiner
 import dev.kura.net.mod.module.impl.combat.Criticals
 import dev.kura.net.mod.module.impl.combat.HolePush
 import dev.kura.net.mod.module.impl.combat.KillAura
-import dev.kura.net.mod.module.impl.combat.M7thAura
+import dev.kura.net.mod.module.impl.combat.KuraAuraPlus
 import dev.kura.net.mod.module.impl.combat.Quiver
 import dev.kura.net.mod.module.impl.combat.SelfFill
 import dev.kura.net.mod.module.impl.combat.Surround
@@ -87,7 +87,7 @@ object ModuleManager {
 
         // Combat
         modules.add(AnchorAura)
-        modules.add(M7thAura)
+        modules.add(KuraAuraPlus)
         modules.add(AutoTotem)
         modules.add(BowBomb)
         modules.add(TotemPopCounter)
