@@ -160,7 +160,7 @@ object ConfigManager {
             val toggle = moduleJson.get("Toggle").asBoolean
             mod.setEnableSilent(toggle)
         } catch (e: NullPointerException) {
-            Kura.LOGGER.error("Loading config failed! Please delete \"M7thH4ck\" folder and retry")
+            Kura.LOGGER.error("Loading config failed! Please delete \"Kura\" folder and retry")
         }
 
         val element = moduleJson.get("Settings") ?: return

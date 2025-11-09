@@ -40,7 +40,7 @@ object ChatUtil : Util() {
 
     @JvmStatic
     fun sendRawMessage(message: CharSequence) {
-        mc.inGameHud.chatHud.addMessage(Text.of("${Formatting.AQUA}[M7thH4ck] ${Formatting.WHITE}$message"))
+        mc.inGameHud.chatHud.addMessage(Text.of("${Formatting.AQUA}[Kura] ${Formatting.WHITE}$message"))
     }
 
 }

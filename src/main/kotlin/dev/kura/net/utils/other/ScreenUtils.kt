@@ -11,7 +11,7 @@ import net.minecraft.client.gui.screen.ingame.SignEditScreen
 import net.minecraft.client.gui.screen.ingame.StructureBlockScreen
 
 object ScreenUtils : Util() {
-    val Screen?.isM7thGui: Boolean
+    val Screen?.isGui: Boolean
         get() = this is ClickGUIScreen
 
     fun Screen.notWhiteListScreen(): Boolean {
@@ -23,6 +23,6 @@ object ScreenUtils : Util() {
     }
 
     fun Screen?.safeReturn(): Boolean {
-        return this != null && this.notWhiteListScreen() || MinecraftClient.getInstance().world == null || MinecraftClient.getInstance().player == null || this.isM7thGui
+        return this != null && this.notWhiteListScreen() || MinecraftClient.getInstance().world == null || MinecraftClient.getInstance().player == null || this.isGui
     }
 }

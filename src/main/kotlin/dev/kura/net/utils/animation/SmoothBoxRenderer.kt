@@ -26,7 +26,7 @@ class SmoothBoxRenderer(
     }
 
     /**
-     * 设置插值动画的时长（单位：毫秒）
+     * 设置插值动画的时长（单位：毫秒）Ï
      */
     fun setDuration(durationMs: Long) {
         this.durationMs = durationMs

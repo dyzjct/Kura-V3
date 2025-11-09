@@ -84,6 +84,7 @@ object KuraAuraPlus : Module("KuraAura+", Category.Combat, true) {
     ) { page == Page.Render && renderMode == RenderMode.Motion }
     private val fadeLength by
     setting("FadeLength", 1000, 0..1000, 1) { page == Page.Render && renderMode != RenderMode.Normal }
+    private val debug by setting("Debug", false) { page == Page.Render }
 
     private var target: PlayerEntity? = null
 
@@ -171,43 +172,14 @@ object KuraAuraPlus : Module("KuraAura+", Category.Combat, true) {
                     if (nullCheck) {
                         boxRenderer.reset()
                     }
-//                    if (renderMap.none()) {
-//                        if (boxRenderer.getLastUpdateTime() - System.currentTimeMillis() > fadeLength) {
-//                            boxRenderer.reset()
-//                        }
-//                    }
-
                     val renderer = ESPRenderer()
                     renderer.aFilled = (fillAlpha * scale).toInt()
                     renderer.aOutline = (lineAlpha * scale).toInt()
-                    ChatUtil.sendRawMessage(scale.toString())
+                    if (debug) ChatUtil.sendRawMessage(scale.toString())
                     renderer.add(box.scale(if (renderMode == RenderMode.Motion) scale else 1f), color)
                     renderer.render(event.matrices, false)
                 }
             }
-//            prevPos?.let { prev ->
-//                currentPos?.let {
-//                    if (renderMode != RenderMode.Scale && renderMode != RenderMode.Fade) {
-//                        val scale = if (renderMap.none()) {
-//                            Easing.IN_CUBIC.dec(Easing.toDelta(it.long, fadeLength))
-//                        } else Easing.OUT_CUBIC.inc(Easing.toDelta(it.long, fadeLength))
-//                        val multiplier = Easing.OUT_QUART.inc(
-//                            Easing.toDelta(
-//                                lastUpdateTime, movingLength
-//                            )
-//                        )
-//                        val motionRenderPos = prev.pos.add(it.pos.subtract(prev.pos).multiply(multiplier.toDouble()))
-//                        val box = toRenderBox(if (renderMode == RenderMode.Motion) motionRenderPos else it.pos, scale)
-//                        val renderer = ESPRenderer()
-//
-//                        renderer.aFilled = (fillAlpha * scale).toInt()
-//                        renderer.aOutline = (lineAlpha * scale).toInt()
-//                        renderer.add(box, color)
-//                        renderer.render(event.matrices, false)
-//                        lastRenderPos = it
-//                    }
-//                }
-//            }
         }
 
         onDisable {
