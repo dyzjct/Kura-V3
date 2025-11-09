@@ -20,7 +20,7 @@ class SmoothBoxRenderer(
         if (currentPos != pos) {
             prevPos = currentPos ?: pos
             currentPos = pos
-            lastUpdateTime
+            lastUpdateTime = System.currentTimeMillis()
         }
         fadeTime = System.currentTimeMillis()
     }
